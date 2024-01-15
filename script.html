@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script </title>
+</head>
+<body>
+    <form id="formulario">
+        Usuario: <input type="text" id="usuario"><br>
+        Contraseña: <input type="password" id="contrasena"><br>
+        <button type="button" onclick="mostrarMensaje()">Iniciar Sesión</button>
+    </form>
+    
+    <script>
+        function mostrarMensaje() {
+          var usuario = document.getElementById('usuario').value;
+          var contraseña = document.getElementById('contrasena').value;
+          alert("Bienvenido usuario " + usuario + " con la contraseña " + contraseña);
+        }
+    </script>
+</body>
+</html>
