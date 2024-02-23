@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mensajes </title>
+            <style>
+                .btn-image {
+                    background-image: url('iconoPapelera.png');
+                    background-size: cover;
+                    width: 65px;
+                    height: 65px;
+                    float: right;
+                }
+                .tweet {
+                    width:500px;
+                    border: 1px solid gray;
+                    border-radius: 10px;
+                }
+            </style>
+            <script src="mensajes.js"></script>
+        </head>
+    <body>
+        <input type="text" id="post" placeholder="Escribe post"><button onclick="Enviar">Enviar</button>
+        <p>Pulsa el botón para sustraer elemento.</p>
+        <button onclick="ordenar">Ordenar</button>     
+        <p id="demo"></p>
+        <script>
+            let posts = ************
+            imprimePosts();
+            function ordenar(){
+                ************
+                imprimePosts();
+            }
+            function eliminar(Eliminar) {
+                let pos = posts.indexOf(elemento);
+                posts.splice(pos,1);
+                imprimePosts();
+            }
+            function anadir()
+            {
+                let mensaje = mensaje
+                posts.push(mensaje);
+                imprimePosts();
+            }
+            function ************(){
+                let longitud=************
+                let i=0, codigoHTML="";
+                let icono="<div class='tweet'><img src='iconoTwitter.png'>";
+                for (i=0;i<longitud;i++){
+                    codigoHTML+=icono+posts[i]+" <button class=\"btn-image\" onclick='eliminar(posts["+i+"]);''></button><br></div>";
+                }
+                document.getElementById("demo").innerHTML=codigoHTML;
+            }
+</script>
+</body>
+</html>
